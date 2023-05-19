@@ -10,14 +10,29 @@ namespace Refactoring.Web.Controllers {
         }
         
         [HttpPost]
-        public async Task<IActionResult> SubmitOrder(string selectedDistrict, decimal orderAmount) {
-            var order = new Order();
-            order.District = selectedDistrict;
-            order.Total = orderAmount;
+        public async Task<IActionResult> SubmitOrder(string selectedDistrict, decimal orderAmount)
+        {
+            var order = CreateOrder(selectedDistrict, orderAmount);
+            var completedOrder = await CompletedOrder(order);
+            return View(completedOrder);
+        }
+
+        public async Task<Order> CompletedOrder(Order order)
+        {
             var orderService = new OrderService(order);
             await orderService.ProcessOrder();
             var completedOrder = orderService.GetOrder();
-            return View(completedOrder);
+            return completedOrder;
+        }
+
+        public Order CreateOrder(string selectedDistrict, decimal orderAmount)
+        {
+            var order = new Order
+            {
+                District = selectedDistrict,
+                Total = orderAmount,
+            };
+            return order;
         }
     }
 }
