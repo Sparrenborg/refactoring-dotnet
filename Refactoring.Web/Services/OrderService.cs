@@ -6,9 +6,12 @@ namespace Refactoring.Web.Services
 {
     public interface IOrderService
     {
+       public Task ProcessOrder();
+        public Order GetOrder();
+        public Task<Advert> CreateAdvert(string district);
     }
 
-    public class OrderService
+    public class OrderService : IOrderService
     {
         private readonly Order _order;
 
@@ -22,6 +25,7 @@ namespace Refactoring.Web.Services
 
         public async Task ProcessOrder()
         {
+
             if (_order.District.ToLower() == "downtown" && (DateTime.Now.DayOfWeek == DayOfWeek.Saturday ||
                                                             DateTime.Now.DayOfWeek == DayOfWeek.Sunday))
             {
@@ -36,7 +40,7 @@ namespace Refactoring.Web.Services
         }
 
 
-        private async Task<Advert> CreateAdvert(string district)
+        public async Task<Advert> CreateAdvert(string district)
         {
             var advert = new Advert();
             advert.CreatedOn = DateTime.Now;

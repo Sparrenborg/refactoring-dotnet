@@ -4,18 +4,26 @@
     &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.UnitTest1.WhenSelectingMiddleton_WeShouldGet_ExpectedOutput&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=25e2e7ec_002Dd714_002D4777_002Dbf06_002Daf1ca442853c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CompleteOrder_WhenCalledWithDowntown_ReturnsExpectedDistrict" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.OrderServiceTests.ProcessOrder_WhenCalledWithCounty_UpdatesOrderAsExpected&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.OrderServiceTests.ProcessOrder_WhenCalledWithMiddleton_UpdatesOrderAsExpected&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=36a35cb0_002D4269_002D4ac2_002D9a23_002D7347828c8eaa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.UnitTest1.Test1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7bed93f8_002D2bce_002D434e_002D841b_002D5eb1038f3cd9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7bed93f8_002D2bce_002D434e_002D841b_002D5eb1038f3cd9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.OrderControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.OrderServiceTests.CompleteOrder_WhenCalledWithCambridge_ReturnsExpectedDistrict&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=de8191d0_002Da676_002D4742_002D8638_002D5b55addfe0b0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.UnitTest1.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.OrderServiceTests.CompleteOrder_WhenCalledWithCambridge_ReturnsExpectedDistrict&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::705C02B8-7EFB-46FB-8B01-2B57C332E32F::net6.0::Tests.OrderServiceTests.CompleteOrder_WhenCalledWithDowntown_ReturnsExpectedDistrict&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

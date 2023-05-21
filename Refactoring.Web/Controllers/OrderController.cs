@@ -8,7 +8,12 @@ namespace Refactoring.Web.Controllers {
         public IActionResult Index() {
             return View();
         }
-        
+
+        private readonly IOrderService _orderService;
+        public OrderController(IOrderService orderService)
+        {
+            _orderService = orderService;
+        }
         [HttpPost]
         public async Task<IActionResult> SubmitOrder(string selectedDistrict, decimal orderAmount)
         {
@@ -19,9 +24,8 @@ namespace Refactoring.Web.Controllers {
 
         public async Task<Order> CompletedOrder(Order order)
         {
-            var orderService = new OrderService(order);
-            await orderService.ProcessOrder();
-            var completedOrder = orderService.GetOrder();
+            await _orderService.ProcessOrder();
+            var completedOrder = _orderService.GetOrder();
             return completedOrder;
         }
 
